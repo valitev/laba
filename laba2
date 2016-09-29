@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int t;
+        double G, F, Y, x, a;
+        scanf("%lf", &x);
+        scanf("%lf", &a);
+        printf("%s", "Введите: t = 1 чтобы рассчитать G. /n Введите: t = 2 чтобы рассчитать F. Введите: t = 3 чтобы рассчитать Y.");
+        scanf("%i", &t);
+
+    switch ( t ) {
+        case 1:
+            G = 4*((2*(-10*a*a+7*a*x+6*x*x)/(-9*a*a+10*a*x+16*x*x)));
+            printf("%0.8f\n", G);
+            break;
+        case 2:
+            F = cos(25*a*a-50*a*x+9*x*x);
+            printf("%0.8f\n", F);
+            break;
+        case 3:
+            Y = acos(21*a*a+59*a*x+8*x*x+1);
+            printf("%0.8f\n", Y);
+            break;
+        default:
+            printf("%s\n", "Введено неправильное значиние t");
+            break;
+    }
+        return 0;
+    }
