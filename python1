@@ -1,0 +1,10 @@
+import math
+
+a = int(input())
+x = int(input())
+G = 4 * (2 * (-10 * a * a + 7 * a * x + 6 * x * x) / (-9 * a * a + 10 * a * x + 16 * x * x))
+F = math.cos(25 * a * a - 50 * a * x + 9 * x * x)
+Y = math.acos(21 * a * a + 59 * a * x + 8 * x * x + 1)
+print("G=%0.8f" % G)
+print("F=%0.8f" % F)
+print("Y=%0.8f" % Y)
